@@ -55,4 +55,4 @@ steps:
       image: '${{build_app_image}}'
       registry: abhishek5105572786
     namespace: default
-    service: kubernetes
+    service: abhishekdemo
