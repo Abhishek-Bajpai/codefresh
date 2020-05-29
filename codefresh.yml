@@ -51,6 +51,8 @@ steps:
     arguments: NA
     kind: kubernetes
     cluster: CodeFreshKubeCluster@Azure subscription 1
-    candidate: '${{build_app_image}}'
+    candidate: 
+      image: '${{build_app_image}}'
+      registry: abhirajbajpai/abhishek5105572786
     namespace: default
     service: kubernetes
