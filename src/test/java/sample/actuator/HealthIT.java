@@ -38,7 +38,7 @@ public class HealthIT {
 	@Test
     public void message() {
 		given().when().get("/")
-            .then().body(containsString("Abhishek Bajpai"));
+            .then().body(containsString("Abhishek"));
     }
 	
 	@Test
