@@ -45,14 +45,3 @@ steps:
         image: byrnedo/alpine-curl
         commands:
           - "curl http://my-spring-app:8080/"
-  Deploy:
-    title: deploying to cluster
-    type: deploy
-    arguments: NA
-    kind: kubernetes
-    cluster: CodeFreshKubeCluster@Azure subscription 1
-    candidate: 
-      image: '${{build_app_image}}'
-      registry: abhishek5105572786
-    namespace: default
-    service: abhishekdemo
