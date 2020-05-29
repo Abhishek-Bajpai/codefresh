@@ -22,7 +22,7 @@ steps:
     title: Building Docker Image
     type: build
     stage: build
-    image_name: abhishek-springboot-app
+    image_name: abhirajbajpai/abhishek5105572786
     working_directory: ./
     tag: 'multi-stage'
     dockerfile: Dockerfile
