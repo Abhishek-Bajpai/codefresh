@@ -9,9 +9,9 @@ steps:
     title: Cloning main repository...
     stage: prepare
     type: git-clone
-    repo: 'codefresh-contrib/spring-boot-2-sample-app'
+    repo: 'Abhishek-Bajpai/codefresh'
     revision: master
-    git: github
+    git: AbhisheksGitProjects
   run_unit_tests:
     title: Compile/Unit test
     stage: test
@@ -22,7 +22,7 @@ steps:
     title: Building Docker Image
     type: build
     stage: build
-    image_name: spring-boot-2-sample-app
+    image_name: abhishek-springboot-app
     working_directory: ./
     tag: 'multi-stage'
     dockerfile: Dockerfile
