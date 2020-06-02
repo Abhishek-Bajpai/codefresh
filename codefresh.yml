@@ -1,8 +1,8 @@
 version: '1.0'
 stages:
   - prepare
-  - test
   - build
+  - test
   - 'integration test'
   - Deploy
 steps:
